@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('minebackground1.jpg'); /* Replace 'background-image.jpg' with the actual image file */
+     
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.35); /* Adjust the alpha value for transparency */
+    }
+    .separator {
+        border: none;
+    border-top: 20px solid #000;
+    margin-top: -285px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+        width: 85px;
+      height: 85px;
+      background-color: white;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      margin-top: -150px;
+      border: 2px solid black;
+      border-radius: 10px;
+      backdrop-filter: blur(40px);
+    }
+    .box::before {
+        content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('minebackground1.jpg') no-repeat;
+      background-size: cover;
+      filter: blur(5px); /* Adjust this value for the amount of blur */
+      z-index: -1;
+    }
+
+    .box:hover {
+        background-color: #eee;
+      transform: scale(1.05);
+    }
+
+    .box img {
+        object-fit: cover;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .box a {
+        text-decoration: double;
+      color: white;
+      font-size: 15px;
+      display: block;
+      margin-top: 10px;
+    }
+    .page-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .options-row {
+        .options-row{
+    position: relative;
+    align-items: center;
+    margin-left: 500px;
+    color: white;
+  }
+    }
+
+    label, select {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .date-row, .row {
+      margin-bottom: 20px;
+    }
+    .content-box {
+    border: 2px solid #333;
+    padding: 54px;
+    border-radius: 415px;
+    margin-left: 452px;
+    position: absolute;
+    color: white;
+    background: inherit;
+    background-attachment: fixed;
+    margin-top: -304px;
+    position: relative;
+    z-index: 1;
+    border:none
+}
+
+  </style>
+</head>
+<body>
+<div class="overlay">
+    <div class="container">
+            <div class="box" onclick="window.location.href='dashboard.html'">
+              <img height="90%" src="dashboard icon.png" alt="Icon 1">
+              <a style="margin-top: 30px ;color: white;">  </style>Dashboard</a>
+            </div>
+            <div class="box" onclick="window.location.href='pulleyfeed.html'">
+              <img src="pulley icon.png" alt="Icon 2">
+              <a>Pulley Feed</a>
+            </div>
+            <div class="box" onclick="window.location.href='about.html'">
+              <img src="about icon.png" alt="Icon 3">
+              <a>About</a>
+            </div>
+            <div class="box" onclick="window.location.href='map.html'">
+              <img src="map icon.png" alt="Icon 4">
+              <a>Mine Map</a>
+            </div>
+            <div class="box" onclick="window.location.href='notification.html'">
+              <img src="notification icon.png" alt="Icon 5">
+              <a>Notifications</a>
+            </div>
+        
+      </div>
+      <hr class="separator">
+      <div class="minebackground">
+        <div class="image1">
+          <div class="page-wrapper">
+         <div class="content-box"> 
+        <div class="container">
+          <h2 class="pulley-datatext-center">Pulley Data Updation</h2>
+        
+        <div class="options-row">
+          
+          <div class="date-row">
+          <label for="dateInput"><span style="color: white;">Date of Entry</span></label>
+      <input type="date" id="dateInput" name="dateInput">
+          </div>
+          <h2 class="pulley-id">
+              <span style="color: white;"> Pulley ID</span>
+          </h2>
+          <label  for="options"><span style="color: white;"> Select the corresponding pulley</span></label>
+          <select id="options" name="options">
+              <option value="DV1">DV1</option>
+              <option value="DV2">DV2</option>
+              <option value="DV3">DV3</option>
+              <option value="DV4">DV4</option>
+              <option value="DV5">DV5</option>
+              <option value="SV1">SV1</option>
+              <option value="SV2">SV2</option>
+              <option value="SV3">SV3</option>
+              <option value="SV4">SV4</option>
+              <option value="SV5">SV5</option>
+              <option value="TV1">TV1</option>
+              <option value="TV2">TV2</option>
+              <option value="TV3">TV3</option>
+              <option value="BV1">BV1</option>
+              <option value="BV2">BV2</option>
+              <option value="BV3">BV3</option>
+              <option value="BV4">BV4</option>
+              <option value="BV5">BV5</option>
+              <option value="IV1">IV1</option>
+              <option value="IV2">IV2</option>
+              <option value="IV3">IV3</option>
+              <option value="IV4">IV4</option>
+              <option value="IV5">IV5</option>
+              <option value="IV6">IV6</option>
+              <option value="DFV1">DFV1</option>
+              <option value="DFV2">DFV2</option>
+              <option value="DFV3">DFV3</option>
+              <option value="DFV4">DFV4</option>
+              <option value="TLV1">TLV1</option>
+              <option value="TLV2">TLV2</option>
+              <option value="TLV3">TLV3</option>
+              <option value="TLV4">TLV4</option>
+              <option value="TLV5">TLV5</option>
+              <option value="TLV6">TLV6</option>
+              <option value="TLV7">TLV7</option>
+          </select>
+        </div>
+        <div class="options-row">
+          <h2 class="oil-contamination">
+              OIL CONTAMINATION
+          </h2>
+          <label  for="options"><span style="color: white;">Select the appropriate option</span></label>
+          <select id="oilContamination-options" name="options">
+              <option value="None">None</option>
+              <option value="Low">Low</option>
+              <option value="Moderate">Moderate</option>
+              <option value="High">High</option>
+              <option value="Extreme">Extreme</option>
+          </select>
+        </div>
+        <div class="options-row">
+          <h2 class="foreign-residue-contamination">
+              Foreign Residue Contamination
+          </h2>
+          <label  for="options"><span style="color: white;">Select the appropriate option</span></label>
+          <select id="foreign-residue-options" name="options">
+              <option value="None">None</option>
+              <option value="Low">Low</option>
+              <option value="Moderate">Moderate</option>
+              <option value="High">High</option>
+              <option value="Extreme">Extreme</option>
+          </select>
+        </div>
+        <div class="options-row">
+          <h2 class="cracks">
+              Cracks 
+          </h2>
+          <label  for="options"><span style="color: white;">Select the appropriate option</span></label>
+          <select id="cracks-options" name="options">
+              <option value="None">None</option>
+              <option value="Low">Low</option>
+              <option value="Moderate">Moderate</option>
+              <option value="High">High</option>
+          </select>
+        </div>
+        <div class="options-row">
+          <h2 class="lagging">
+              Lagging
+          </h2>
+          <label  for="options"><span style="color: white;">Select the appropriate option</span></label>
+          <select id="lagging-options" name="options">
+              <option value="None">None</option>
+              <option value="Low">Low</option>
+              <option value="Moderate">Moderate</option>
+              <option value="High">High</option>
+          </select>
+          <div class="row">
+              <button onclick="inspectionentry()" class="data-submit-button">Submit</button>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+          </div>
+        </div>
+      
+        <script src="script.js"></script>
+          </div>
+</div>
+      </body>
+      </html>
+      

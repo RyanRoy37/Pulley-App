@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('page1 background.jpg'); /* Replace 'background-image.jpg' with the actual image file */
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: -300px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin-top: 180px;
+      margin-left: 320px;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: white;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      margin-top: 50px;
+      border: 2px solid black;
+      border-radius: 10px;
+      backdrop-filter: blur(40px);
+    }
+    .box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('page1 background.jpg') no-repeat;
+      background-size: cover;
+      filter: blur(10px); /* Adjust this value for the amount of blur */
+      z-index: -1;
+    }
+
+    .box:hover {
+      background-color: #eee;
+      transform: scale(1.05);
+    }
+
+    .box img {
+        object-fit: cover;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .box a {
+      text-decoration: double;
+      color: white;
+      font-size: 24px;
+      display: block;
+      margin-top: 10px;
+    }
+    .box a1{
+        margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box" onclick="window.location.href='dashboard.html'">
+    <img height="90%" src="dashboard icon.png" alt="Icon 1">
+    <a style="margin-top: 30px ;color: white;">  </style>Dashboard</a>
+  </div>
+  <div class="box" onclick="window.location.href='pageC.html'">
+    <img src="pulley icon.png" alt="Icon 2">
+    <a>Pulley Feed</a>
+  </div>
+  <div class="box" onclick="window.location.href='pageB.html'">
+    <img src="about icon.png" alt="Icon 3">
+    <a>About</a>
+  </div>
+  <div class="box" onclick="window.location.href='minemap.html'">
+    <img src="map icon.png" alt="Icon 4">
+    <a>Mine Map</a>
+  </div>
+  <div class="box" onclick="window.location.href='notif.html'">
+    <img src="notification icon.png" alt="Icon 5">
+    <a>Notifications</a>
+  </div>
+  <div class="box" onclick="openPage('index')">
+    <img src="logout icon.png" alt="Icon 5">
+    <a>LogOut</a>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

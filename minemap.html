@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Replit</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  
+  <style>
+    /* Your existing styles here */
+    .alert-box {
+      position: fixed;
+top: 50%;
+left: 50%;
+width: 204px;
+margin-left: 527px;
+margin-top: -226px;
+transform: translate(-50%, -50%);
+background-color: #f8d7da;
+color: #721c24;
+padding: 15px;
+border: 1px solid #f5c6cb;
+border-radius: 5px;
+        display: none; /* Hidden by default */
+    }
+
+    .clear-button {
+        background-color: #f5c6cb;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+        border-radius: 3px;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+</style>
+</head>
+
+<body>
+  <div class="ribbon" id="ribbon">
+    <button  style="margin-left: 30px; font-size: 24px;" class ="option1" onclick="openPage('Home')">HOME</button>
+      <button style="margin-left: 450px; font-size: 30px;" class ="option1" onclick="openPage('Home')">
+          <img class="icon" src="orion archer.jpg" alt="Icon">Pulley ForecastPro</button>
+          <div id="alertContainer" class="alert-box">
+            <div id="alertContent"></div>
+            <button class="clear-button" onclick="clearAlert()">Clear</button>
+        </div>
+  
+</div>
+  
+    <h2 class="text-center">Mine Maps</h2>
+  <div class="container3">
+    <img class="mine-image" src="minemap.jpg" alt="Map Image">
+    <div class="DV1" id="DV1"></div>
+    <div class="DV2" id="DV2" ></div>
+    <div class="DV3" id="DV3"></div>
+    <div class="DV4" id="DV4"></div>
+    <div class="DV5" id="DV5"></div>
+    <div class="SV1" id="SV1"></div>
+    <div class="SV2" id="SV2"></div>
+    <div class="SV3" id="SV3"></div>
+    <div class="SV4" id="SV4"></div>
+    <div class="SV5" id="SV5"></div>
+    <div class="TV1" id="TV1"></div>
+    <div class="TV2" id="TV2"></div>
+    <div class="TV3" id="TV3"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

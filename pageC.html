@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Replit</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+
+<body>
+  
+    <div class="pulley-background">
+    <div class="ribbon" id="ribbon">
+     
+        <button style="margin-left: 550px; font-size: 30px;" class ="option1" onclick="openPage('Home')">
+            <img class="icon" src="orion archer.jpg" alt="Icon">Pulley ForecastPro</button>
+   
+    
+  </div>
+  
+  
+  <div class="page-wrapper">
+    <div class="content-box"> 
+      <div class="row">
+        <h2 style="margin-left: 80px;">Press the button to start the sensors</h2>
+        <button onclick="startsensors()" class="data-start-button" style="width: 100px;margin-left: 213px; padding:10px 15px; font-size:18px;">Start</button>
+    </div>
+    <div>
+      <h2 style="margin-left: 80px;">Choose image of the conveyor belt</h2>
+    <input style="margin-left: 153px;
+    margin-top: 0px;
+    padding: 10px 15px;
+    font-size: 18px;" type="file" id="fileInput" accept="image/*" onchange="handleFileSelect(this.files)">
+    </div>
+    <button onclick="uploadfile()" class="upload-button" style="margin-left: 213px;margin-top: 10px;padding:10px 15px; font-size:18px;">Upload</button>
+    
+<div class="spacer" style="margin-bottom: 1em;"></div>
+    <h2 class="pulley-datatext-center">Pulley Data Updation</h2>
+  
+  <div class="options-row">
+    
+    <div class="date-row">
+    <label for="dateInput"><span style="color: white;">Date of Entry</span></label>
+<input type="date" id="dateInput" name="dateInput">
+    </div>
+    <h2 class="pulley-id">
+        <span style="color: white;"> Pulley ID</span>
+    </h2>
+    <label  for="options"><span style="color: white;"> Select the corresponding pulley</span></label>
+    <select id="options" name="options">
+        <option value="DV1">DV1</option>
+        <option value="DV2">DV2</option>
+        <option value="DV3">DV3</option>
+        <option value="DV4">DV4</option>
+        <option value="DV5">DV5</option>
+        <option value="SV1">SV1</option>
+        <option value="SV2">SV2</option>
+        <option value="SV3">SV3</option>
+        <option value="SV4">SV4</option>
+        <option value="SV5">SV5</option>
+        <option value="TV1">TV1</option>
+        <option value="TV2">TV2</option>
+        <option value="TV3">TV3</option>
+        <option value="BV1">BV1</option>
+        <option value="BV2">BV2</option>
+        <option value="BV3">BV3</option>
+        <option value="BV4">BV4</option>
+        <option value="BV5">BV5</option>
+        <option value="IV1">IV1</option>
+        <option value="IV2">IV2</option>
+        <option value="IV3">IV3</option>
+        <option value="IV4">IV4</option>
+        <option value="IV5">IV5</option>
+        <option value="IV6">IV6</option>
+        <option value="DFV1">DFV1</option>
+        <option value="DFV2">DFV2</option>
+        <option value="DFV3">DFV3</option>
+        <option value="DFV4">DFV4</option>
+        <option value="TLV1">TLV1</option>
+        <option value="TLV2">TLV2</option>
+        <option value="TLV3">TLV3</option>
+        <option value="TLV4">TLV4</option>
+        <option value="TLV5">TLV5</option>
+        <option value="TLV6">TLV6</option>
+        <option value="TLV7">TLV7</option>
+    </select>
+  </div>
+  <div class="options-row">
+    <h2 class="oil-contamination">
+        OIL CONTAMINATION
+    </h2>
+    <label  for="options"><span style="color: white;">Select the appropriate option</span></label>
+    <select id="oilContamination-options" name="options">
+        <option value="None">None</option>
+        <option value="Low">Low</option>
+        <option value="Moderate">Moderate</option>
+        <option value="High">High</option>
+        <option value="Extreme">Extreme</option>
+    </select>
+  </div>
+  <div class="options-row">
+    <h2 class="foreign-residue-contamination">
+        Foreign Residue Contamination
+    </h2>
+    <label  for="options"><span style="color: white;">Select the appropriate option</span></label>
+    <select id="foreign-residue-options" name="options">
+        <option value="None">None</option>
+        <option value="Low">Low</option>
+        <option value="Moderate">Moderate</option>
+        <option value="High">High</option>
+        <option value="Extreme">Extreme</option>
+    </select>
+  </div>
+  <div class="options-row">
+    <h2 class="cracks">
+        Cracks 
+    </h2>
+    <label  for="options"><span style="color: white;">Select the appropriate option</span></label>
+    <select id="cracks-options" name="options">
+        <option value="None">None</option>
+        <option value="Low">Low</option>
+        <option value="Moderate">Moderate</option>
+        <option value="High">High</option>
+    </select>
+  </div>
+  <div class="options-row">
+    <h2 class="lagging">
+        Lagging
+    </h2>
+    <label  for="options"><span style="color: white;">Select the appropriate option</span></label>
+    <select id="lagging-options" name="options">
+        <option value="None">None</option>
+        <option value="Low">Low</option>
+        <option value="Moderate">Moderate</option>
+        <option value="High">High</option>
+    </select>
+    <div class="row">
+        <button onclick="inspectionentry()" class="data-submit-button">Submit</button>
+    </div>
+  </div>
+  </div>
+  
+</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+    
+  
+</body>
+</html>
+<script>
+  function openPage(option) {
+    let pageUrl = '';
+
+    switch (option) {
+      case 'Home':
+        pageUrl = 'Page1.html';
+        break;
+      case 'index':
+        logout();
+        // No need for break here since the function will return or exit after this
+        return;
+      case 'Info':
+        pageUrl = 'pageB.html';
+        break;
+      case 'Pulley':
+        pageUrl = 'pageC.html';
+        break;
+      case 'Notif':
+        pageUrl = 'notif.html';
+        break;
+      case 'Mine':
+        pageUrl = 'minemap.html';
+        break;
+      default:
+        break;
+    }
+
+    if (pageUrl !== '' && option !== 'index') {
+      window.location.href = pageUrl;
+    }
+  }
+
+  function logout() {
+    // Change the URL and add a new history entry
+    window.open('index.html', '_self').close();
+  }
+</script>

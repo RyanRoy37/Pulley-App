@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Alerts and Notifications</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="utils.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <style>
+        /* Your existing styles here */
+        .alert-box {
+          position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1143px;
+    margin-left: 32px;
+    margin-top: -26px;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+            display: none; /* Hidden by default */
+            text-align: center;
+            font-size: 38px;
+        }
+
+        .clear-button {
+            background-color: #f5c6cb;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            border-radius: 3px;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        #startButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="notif-background">
+        <div class="ribbon" id="ribbon">
+            <button style="margin-left: 30px; font-size: 24px;" class="option1" onclick="openPage('Home')">HOME</button>
+            <button style="margin-left: 450px; font-size: 30px;" class="option1" onclick="openPage('Home')">
+                <img class="icon" src="orion archer.jpg" alt="Icon">Pulley ForecastPro</button>
+        </div>
+
+        <div class="container">
+            <h2 class="text-center" style="margin-left: 500px;">Alerts and Notifications</h2>
+
+            <div id="alertContainer" class="alert-box">
+                <div id="alertContent"></div>
+                <button class="clear-button" onclick="clearAlert()">Clear</button>
+            </div>
+            <button id="startButton">Start</button>
+
+            <script>
+                const alertsData1 = [
+    { pulleyId: 'DV1', prediction: 'alert' },
+    { pulleyId: 'DV2', prediction: 'monitor' },
+    { pulleyId: 'DV3', prediction: 'alert' },
+    // Add more data as needed
+  ];
+
+  // Function to create and display an alert box
+  function createAlertBox(data) {
+    if (data.prediction.toLowerCase() === 'alert') {
+      const alertContainer = document.getElementById('alertContainer');
+      const alertContent = document.getElementById('alertContent');
+
+      // Set the content of the alert
+      alertContent.innerHTML = `Alert for Pulley ID: ${data.pulleyId}`;
+
+      // Show the alert box
+      alertContainer.style.display = 'block';
+    }
+  }
+
+  // Function to clear the alert box
+  function clearAlert() {
+    const alertContainer = document.getElementById('alertContainer');
+
+    // Hide the alert box
+    alertContainer.style.display = 'none';
+  }
+
+  // Display alerts from the sample data
+  document.addEventListener('DOMContentLoaded', function () {
+    // Call createAlertBox for each data item
+    alertsData1.forEach(createAlertBox);
+  });
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

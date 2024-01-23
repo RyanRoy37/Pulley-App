@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Replit</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+  <style>
+    .alert-container {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            z-index: 999;
+        }
+
+        .alert-box {
+            background-color: #ff6961;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .alert-box:hover {
+            transform: scale(1.05);
+        }
+
+        .clear-button {
+            cursor: pointer;
+        }
+  </style>
+
+<body>
+  
+    <div class="dashboard-background">
+        <div class="ribbon" id="ribbon">
+            <button  style="margin-left: 30px; font-size: 24px;" class ="option1" onclick="openPage('Home')">HOME</button>
+              <button style="margin-left: 450px; font-size: 30px;" class ="option1" onclick="openPage('Home')">
+                  <img class="icon" src="orion archer.jpg" alt="Icon">Pulley ForecastPro</button>
+         
+         
+                  <div class="alert-container" id="alertContainer">
+                    <!-- Alerts will be dynamically added here -->
+                </div>
+                <img class="dashboard" style="height: 806px;width: 1220px; margin-top: 911px;margin-left: -797px;" src="dashboard.jpeg" alt="Icon">
+        </div>
+  
+  <script src="script.js"></script>
+  </div><body>
+    
+  </body>

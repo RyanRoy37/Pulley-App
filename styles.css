@@ -1,0 +1,664 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+    background-color: white;
+     color: black; /* Set text colors to white for better visibility on a dark background */
+      }
+body1{
+        background-color: black;
+ }
+ .minebackground{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url("minebackground1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(24, 21, 21);
+    height: 1000px;
+ }
+ .dashboard-background{
+  background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url("mine wallpaper1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(24, 21, 21);
+    height: 1000px;
+ }
+ .pulley-background{
+  background-image: url("blue.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 1000px;
+ }
+ .notif-background{
+  background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url("mine\ wallpaper3.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(24, 21, 21);
+    height: 1000px;
+ }
+label{
+    color: black;
+}
+.icont{
+    margin-left: 10px;
+    height: 10px;
+    width: 10px;
+}
+.miner{
+    height: 266px;
+    width: 241px;
+    margin-left: 450px;
+    margin-top: 0px;
+    float: right;
+    position: absolute;
+}
+select{
+    font-size: 14px;
+font-weight: bold;
+color: black;
+}
+  .pulley-id{
+    margin-left: 80px;
+    color: black;
+    margin-top: 0px;
+  }
+  .text-center{
+    text-align: center;
+    margin-top: 20px;
+
+    font-family: 'Times New Roman','serif';
+    font-size: xx-large;
+    align-items: center;
+  }
+  .userpass,
+  .password {
+    margin-left: 14px;
+    padding: 9px 40px;
+    border: 1px solid black; /* Fix: Specify border style */
+    border-radius: 9px;
+    margin-top: 10px;
+  }
+
+  .loginbutton {
+    margin-left: 12px;
+    padding: 9px 40px;
+    margin-top: 10px;
+    color: rgb(145, 145, 187);
+  }
+
+  .login-container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    max-width: 281px;
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: column; /* Set the direction to column */
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1px;
+    margin-bottom: -14px;
+    
+}
+  .ribbon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    height: 97px;
+    font-family: 'Garamond';
+  }
+  .option1{
+    margin-left: 40px;
+    font-family: 'Garamond';
+  }
+  
+  .ribbon button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .ribbon button:hover {
+    text-decoration: underline;
+  }
+  labels{
+    color: white;
+  }
+  .container {
+   
+    color: white;
+    padding: 27px;
+    margin: 0px;
+    margin-top: -20px;
+    margin-left: -444px;
+  }
+.image1{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url("minebackground1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(24, 21, 21);
+}
+  .DV1 {
+    position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+    top: 508px; /* Align the top of the circle at the vertical center of the container */
+    left: 476px; /* Align the left of the circle at the horizontal center of the container */
+    transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+    width: 10px; /* Set the width of the circle */
+    height: 10px; /* Set the height of the circle */
+    background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+    border-radius: 50%; /* Create a circular shape */
+  }
+  .DV1::after {
+    content: "Pulley ID: DV1  Location:25.6789° N, 80.9012° E  Sector: 1";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px; /* Adjust the font size as needed */
+    white-space: nowrap; /* Ensure the text is displayed in a single line */
+    display: none;
+}
+
+.DV1:hover::after {
+    display: block;
+}
+  .DV2 {
+    position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+    top: 442px; /* Align the tsop of the circle at the vertical center of the container */
+    left: 536px; /* Align the left of the circle at the horizontal center of the container */
+    transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+    width: 10px; /* Set the width of the circle */
+    height: 10px; /* Set the height of the circle */
+    background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+    border-radius: 50%; /* Create a circular shape */
+  }
+  .DV2::after {
+    content: "Pulley ID: DV2  Location:25.6790° N, 80.9077° E  Sector: 2";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px; /* Adjust the font size as needed */
+    white-space: nowrap; /* Ensure the text is displayed in a single line */
+    display: none;
+}
+
+.DV2:hover::after {
+    display: block;
+}
+  .DV3 {
+    position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+    top: 455px; /* Align the tsop of the circle at the vertical center of the container */
+    left: 661px; /* Align the left of the circle at the horizontal center of the container */
+    transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+    width: 10px; /* Set the width of the circle */
+    height: 10px; /* Set the height of the circle */
+    background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+    border-radius: 50%; /* Create a circular shape */
+  }
+  .DV3::after {
+    content: "Pulley ID: DV3  Location:25.6730° N, 80.9055° E  Sector: 3";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px; /* Adjust the font size as needed */
+    white-space: nowrap; /* Ensure the text is displayed in a single line */
+    display: none;
+}
+
+.DV3:hover::after {
+    display: block;
+}
+  .DV4 {
+    position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+    top: 504px; /* Align the tsop of the circle at the vertical center of the container */
+    left: 664px; /* Align the left of the circle at the horizontal center of the container */
+    transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+    width: 10px; /* Set the width of the circle */
+    height: 10px; /* Set the height of the circle */
+    background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+    border-radius: 50%; /* Create a circular shape */
+  }
+  .DV4::after {
+    content: "Pulley ID: DV4  Location:25.6809° N, 80.9112° E  Sector: 4";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px; /* Adjust the font size as needed */
+    white-space: nowrap; /* Ensure the text is displayed in a single line */
+    display: none;
+}
+
+.DV4:hover::after {
+    display: block;
+}
+  .DV5 {
+    position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+    top: 555px; /* Align the tsop of the circle at the vertical center of the container */
+    left: 591px; /* Align the left of the circle at the horizontal center of the container */
+    transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+    width: 10px; /* Set the width of the circle */
+    height: 10px; /* Set the height of the circle */
+    background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+    border-radius: 50%; /* Create a circular shape */
+  }
+  .DV5::after {
+    content: "Pulley ID: DV5  Location:25.6777° N, 80.9012° E  Sector: 5";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px; /* Adjust the font size as needed */
+    white-space: nowrap; /* Ensure the text is displayed in a single line */
+    display: none;
+}
+
+.DV5:hover::after {
+    display: block;
+}
+.SV3 {
+  position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+  top: 450px; /* Align the tsop of the circle at the vertical center of the container */
+  left: 681px; /* Align the left of the circle at the horizontal center of the container */
+  transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+  width: 10px; /* Set the width of the circle */
+  height: 10px; /* Set the height of the circle */
+  background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+  border-radius: 50%; /* Create a circular shape */
+}
+.SV3::after {
+  content: "Pulley ID: SV1  Location:25.6781° N, 80.9010° E  Sector: 3";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px; /* Adjust the font size as needed */
+  white-space: nowrap; /* Ensure the text is displayed in a single line */
+  display: none;
+}
+
+.SV3:hover::after {
+  display: block;
+}
+.SV2 {
+  position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+  top: 423px; /* Align the tsop of the circle at the vertical center of the container */
+  left: 531px; /* Align the left of the circle at the horizontal center of the container */
+  transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+  width: 10px; /* Set the width of the circle */
+  height: 10px; /* Set the height of the circle */
+  background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+  border-radius: 50%; /* Create a circular shape */
+}
+.SV2::after {
+  content: "Pulley ID: SV2  Location:25.6733° N, 80.9055° E  Sector: 2";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px; /* Adjust the font size as needed */
+  white-space: nowrap; /* Ensure the text is displayed in a single line */
+  display: none;
+}
+
+.SV2:hover::after {
+  display: block;
+}
+.SV1 {
+  position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+  top: 518px; /* Align the tsop of the circle at the vertical center of the container */
+  left: 497px; /* Align the left of the circle at the horizontal center of the container */
+  transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+  width: 10px; /* Set the width of the circle */
+  height: 10px; /* Set the height of the circle */
+  background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+  border-radius: 50%; /* Create a circular shape */
+}
+.SV1::after {
+  content: "Pulley ID: SV1";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px; /* Adjust the font size as needed */
+  white-space: nowrap; /* Ensure the text is displayed in a single line */
+  display: none;
+}
+
+.SV1:hover::after {
+  display: block;
+}
+.SV4 {
+  position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+  top: 505px; /* Align the tsop of the circle at the vertical center of the container */
+  left: 680px; /* Align the left of the circle at the horizontal center of the container */
+  transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+  width: 10px; /* Set the width of the circle */
+  height: 10px; /* Set the height of the circle */
+  background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+  border-radius: 50%; /* Create a circular shape */
+}
+.SV4::after {
+  content: "Pulley ID: SV4  Location:25.6789° N, 80.9012° E  Sector: 4";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px; /* Adjust the font size as needed */
+  white-space: nowrap; /* Ensure the text is displayed in a single line */
+  display: none;
+}
+
+.SV4:hover::after {
+  display: block;
+}
+.SV5 {
+  position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+  top: 569px; /* Align the tsop of the circle at the vertical center of the container */
+  left: 601px; /* Align the left of the circle at the horizontal center of the container */
+  transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+  width: 10px; /* Set the width of the circle */
+  height: 10px; /* Set the height of the circle */
+  background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+  border-radius: 50%; /* Create a circular shape */
+}
+.SV5::after {
+  content: "Pulley ID: SV5  Location:25.6889° N, 80.9712° E  Sector: 5";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px; /* Adjust the font size as needed */
+  white-space: nowrap; /* Ensure the text is displayed in a single line */
+  display: none;
+}
+
+.SV5:hover::after {
+  display: block;
+}
+.TV1 {
+  position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+  top: 506px; /* Align the tsop of the circle at the vertical center of the container */
+  left: 461px; /* Align the left of the circle at the horizontal center of the container */
+  transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+  width: 10px; /* Set the width of the circle */
+  height: 10px; /* Set the height of the circle */
+  background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+  border-radius: 50%; /* Create a circular shape */
+}
+.TV1::after {
+  content: "Pulley ID: TV1  Location:25.6781° N, 80.9012° E  Sector: 1";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px; /* Adjust the font size as needed */
+  white-space: nowrap; /* Ensure the text is displayed in a single line */
+  display: none;
+}
+
+.TV1:hover::after {
+  display: block;
+}
+.TV2 {
+  position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+  top: 409px; /* Align the tsop of the circle at the vertical center of the container */
+  left: 523px; /* Align the left of the circle at the horizontal center of the container */
+  transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+  width: 10px; /* Set the width of the circle */
+  height: 10px; /* Set the height of the circle */
+  background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+  border-radius: 50%; /* Create a circular shape */
+}
+.TV2::after {
+  content: "Pulley ID: TV2  Location:25.6769° N, 80.9062° E  Sector: 2";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px; /* Adjust the font size as needed */
+  white-space: nowrap; /* Ensure the text is displayed in a single line */
+  display: none;
+}
+
+.TV2:hover::after {
+  display: block;
+}
+.TV3 {
+  position: absolute; /* Position the overlay relative to its closest positioned ancestor (the container) */
+  top: 444px; /* Align the tsop of the circle at the vertical center of the container */
+  left: 693px; /* Align the left of the circle at the horizontal center of the container */
+  transform: translate(-50%, -50%); /* Adjust the circle position to be centered exactly */
+  width: 10px; /* Set the width of the circle */
+  height: 10px; /* Set the height of the circle */
+  background-color: rgb(39, 255, 10); /* Set the background color (red with 50% transparency) */
+  border-radius: 50%; /* Create a circular shape */
+}
+.TV3::after {
+  content: "Pulley ID: TV3  Location:25.6769° N, 80.9069° E  Sector: 3";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px; /* Adjust the font size as needed */
+  white-space: nowrap; /* Ensure the text is displayed in a single line */
+  display: none;
+}
+
+.TV3:hover::after {
+  display: block;
+}
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .blinking{
+    background-color: rgb(252, 9, 9);
+    animation: blink 0.2s infinite alternate;
+  }
+  .mine-image{
+    height: 520px;
+    align-items: center;
+margin-left: 320px;
+  }
+  .options-row{
+    position: relative;
+    align-items: center;
+    margin-left: 100px;
+    color: white;
+  }
+  .foreign-residue-contamination{
+    margin-left: -10px;
+  }
+  .cracks{
+    margin-left: 100px;
+  }
+  .lagging{
+    margin-left: 100px;
+  }
+  .oil-contamination{
+    margin-left: 30px;
+  }
+  .indexicon{
+    width: 130px;
+    height: 138px;
+    margin-right: -37px;
+    margin-top: 0px;
+    margin-bottom: -67px;
+    margin-left: -20px;
+  }
+  .ministryicon{
+    width: 500px;
+    height: 200px;
+    margin-top: 50px;
+    
+}
+.logout-option{
+    margin-left: 300px;
+    font-size: 14px;
+}
+.row{
+    margin-top: 10px;
+}
+.info-background{
+    width: 647px;
+    height: 207px;
+    margin-top: 10px;
+    
+}
+.date-row{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+.content-box {
+    border: 2px solid #333;
+    padding: 93px;
+    border-radius: 179px;
+    margin-left: 452px;
+    position: absolute;
+    color: white;
+    background: url("mine\ wallpaper2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-top: -314px;
+    position: relative;
+    z-index: 1;
+    border:none
+}
+.data-submit-button{
+    margin-left: 110px;
+    font-size: larger;
+    color: black;
+}
+.container-for-info{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url('info background.jpg');
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: relative;
+    background-size: cover;
+    margin-top: -20px;
+}
+.pulley-datatext-center{
+    margin-left: 130px;
+}
+
+
+  .row1{
+    margin-left: 50px;
+  }
+  .ministry-info{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    margin-left: 40px;
+    z-index: 100;
+    position: relative;
+    color: white;
+  }
+  .page-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 345px;
+    margin-left: -428px;
+    background:  url("blue.jpeg");
+    background-repeat: no-repeat;
+    /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/
+    background-size: cover;
+    
+    color: white;
+    position: relative;
+    z-index: 1; 
+}
+  .container2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 26px;
+    margin: 128px;
+    margin-top: -50px;
+}
+  .column{
+    width: 500px;
+  }
